@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Float & Clear
+</title>
+<style>
+h1{
+color:white;
+text-align:center;
+font-size:30px;
+}
+h2{
+padding-left:80px;
+}
+li{
+font-size:20px;
+text-align:left;
+font-size:25px;
+font-weight:900;
+}
+body{
+background-image:url('formbg.jfif');
+}
+.container{
+border:5px solid grey;
+border-radius:20px;
+}
+.recipie{
+border:2px solid grey;
+border-radius:15px;
+margin:15px 30px;
+padding-left:60px;
+box-sizing:border-box;
+width:40%;
+font-size:35px;
+font-weight:900;
+
+}
+.form{
+margin:8px 3px;
+}
+#Maggie{
+float:left;
+background-image:url('maggie.jpg');
+background-size:125%;
+color:black;
+}
+#Pasta{
+float:right;
+background-image:url('pazzta.jfif');
+background-repeat:no-repeat;
+background-size:cover;
+color:rgb(255,255,255);
+}
+#Macroni{
+float:right;
+padding-bottom:45px;
+background-image:url('macroni.jpg');
+background-size:cover;
+opacity:0.9;
+}
+#Burger{
+float:left;
+background-image:url('burg.jfif');
+background-size:125%;
+color:rgb(255,255,255);
+}
+#Order{
+background-color:rgb(232, 223, 223);
+clear:both;
+height:450px;
+box-sizing:border-box;
+border:5px solid black;
+border-radius:20px;
+padding:10px;
+margin:30px 420px;
+width:40%;
+}
+#buton{
+margin:20px 120px;
+}
+#Regulations{
+clear:both;
+border:2px solid grey;
+border-radius:15px;
+margin:15px 30px;
+padding-left:90px;
+box-sizing:border-box;
+text-align:center;
+color:white;
+}
+</style>
+</head>
+<body>
+<h1><u>WELCOME TO FOODIES RESTAURANT</u></h1>
+<hr>
+<div class="container">
+<div id="Maggie" class="recipie">
+<h2><u>Maggie</u></h2>
+<hr>
+<ol type="1">
+<li>Soupy Maggie</li>
+<li>Veg Maggie</li>
+<ol type="a">
+<li>Tomato Maggie</li>
+<li>Onion & Capsicum</li>
+<li>Carrot & Beans</li>
+</ol>
+<li>Butter Masala Maggie</li>
+<ol type="a">
+<li>Butter masala Maggie</li>
+<li>Cheese Butter Maggie</li>
+</ol>
+<li>Spicy Fried Maggie</li>
+</ol>
+</div>
+<div id="Pasta" class="recipie">
+<h2><u>Pasta</u></h2>
+<hr>
+<ol type="1">
+<li>Spicy Pasta</li>
+<li>Veg Pasta</li>
+<ol type="a">
+<li>Tomato</li>
+<li>Onion & Capsicum</li>
+<li>Carrot & Beans</li>
+</ol>
+<li>Butter Delight Pasta</li>
+<li>Cheese Loaded Pasta</li>
+<ol type="a">
+<li>Red Sauce</li>
+<li>White Sauce</li>
+</ol>
+</ol>
+</div>
+<div id="Macroni" class="recipie">
+<h2><u>Macroni</u></h2>
+<hr>
+<ol type="1">
+<li>Veg Macroni</li>
+<ol type="a">
+<li>Tomato</li>
+<li>Onion & Capsicum</li>
+<li>Carrot & Beans</li>
+</ol>
+<li>Cheese Loaded Macroni</li>
+<ol type="a">
+<li>Red Sauce</li>
+<li>White Sauce</li>
+</ol>
+</ol>
+</div>
+<div id="Burger" class="recipie">
+<h2><u>Burger</u></h2>
+<hr>
+<ol type="1">
+<li>Veg Burger</li>
+<ol type="a">
+<li>Aloo Tikki</li>
+<li>Veggie</li>
+<li>Cheese</li>
+<li>Double Pattie</li>
+</ol>
+<li>Non-Veg Burger</li>
+<ol type="a">
+<li>Omlette</li>
+<li>Chicken</li>
+<li>Ham</li>
+</ol>
+</ol>
+</div>
+<div id="Order">
+<h2>Order Here . . .</h2>
+<form action="">
+<div class="form">
+<label for="Name">Name</label>
+<input type="text" name="UserName" id="Name" required>
+</div>
+<div class="form">
+<label for="contact">Contact Number</label>
+<input type="tel" name="UserContact" id="contact" maxlength="10"  placeholder="+91_ _ _ _ _ _ _ _ _ _" required>
+</div>
+<div class="form">
+<label for="Ord">Enter Your Order</label>
+<input type="text" name="UserName" id="Name" maxlength="3" placeholder="eg:1 a">
+</div>
+<div class="form">
+<label for="CarryBag">Need CarryBag?(max 2)</label>
+<input type="range" name="UserCB" id="CarryBag" min="0" max="2" set="0" >
+</div>
+<div class="form">
+<label for="Payment">Payment Mode</label>
+<select>
+<option>Cash</option>
+<option>Debit Card</option>
+<option>Credit Card</option>
+<option>Net Banking</option>
+<option>PayTm</option>
+<option>GooglePay</option>
+<option>PhonePay</option>
+</select>
+</div>
+<div class="form">
+<label for="Bill">Order Total</label>
+<input type="text" name="UserBill" id="Bill">
+</div>
+<div class="form">
+<label for="donate">Do you want to Donate Some Money for Poors?</label>
+<input type="checkbox" name="Userdonation" id="donate">
+</div>
+<div class="form">
+<label for="donateAmt">Enter Donation Amount </label>
+<input type="number" name="UserdonationAmt" id="donateAmt" disabled>
+</div>
+<div class="form" id="buton">
+<input type="submit" value="Place Order">
+<input type="reset" value="Reset">
+</div>
+<div class="form">
+<label for="details">Your Order Details</label>
+<input type="text" name="OrderDetails" id="details" placeholder="255-92-28">
+</div>
+</form>
+</div>
+<div id="Regulations" >
+<h1>PLEA . . .</h1>
+<ul>
+<li>Please Wait For Your Order To get Ready!!</li>
+<li>Don't Spill Your Food Please!!</li>
+<li>Don't Waste Food Please!!</li>
+<li>Keep Your Surrounding Clean!!</li>
+<li>Thank  You For Visiting!!</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

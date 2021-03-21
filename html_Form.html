@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	HTML FORMS
+</title>
+<style>
+body{
+color:white;
+background-image:url('formbg.jfif');
+background-repeat:no-repeat;
+background-size:cover;
+}
+</style>
+</head>
+<body>
+<h1 align="center"><i><u>BIODATA FORM</u></i></h1>
+<hr>
+
+<form action="">
+<div>
+<label for="Name">Name</label>
+<input type="text" name="UserName" id="Name">
+</div>
+<br>
+<div>
+<label for="Role">Role</label>
+<input type="text" name="UserRole" id="Role" placeholder="Developer">
+</div>
+<br>
+<div>
+<label for="Roll">Roll No</label>
+<input type="text" name="UserRoll" id="Roll">
+</div>
+<br>
+<div>
+<label for="Email">Email ID</label>
+<input type="email" id="Email" name="UserEmail" placeholder="Example@123.com">
+</div>
+<br>
+<div>
+<label for="AccPass">Account Password</label>
+<input type="password" name="UserPass" id="AccPass">
+</div>
+<br>
+<div>
+<label for="Gender">Gender:</label>
+<input type="radio" name="UserGender" id="Gender"> Male <input type="radio" name="UserGender" id="Gender"> Female <input type="radio" name="UserGender" id="Gender">Others
+</div>
+<br>
+<div>
+<label for="Sib">Number of Siblings</labels>
+<input type="number" name="UserSib" id="Sib">
+</div>
+<br>
+<div>
+<label for="Qual">Qualification</label>
+<select name="UserQual" id="Qual">
+<option value="B.Tech">B.Tech</option>
+<option value="B.A.">B.A.</option>
+<option value="B.Sc">B.Sc</option>
+<option value="B.C.A">B.C.A</option>
+</select>
+</div>
+<br>
+<div>
+<label for="DOB">Date Of Birth</label>
+<input type="date" name="UserDOB" id="DOB">
+</div>
+<br>
+<div>
+Eligible to Vote?<input type="checkbox">
+</div>
+<br>
+<div>
+<label for="Skills">Your Skills</label>
+<textarea  cols="70" rows="10" name="UserSkills" id="Skills" placeholder="Mention your skills you are good at . . ."></textarea>
+</div>
+<br>
+<div>
+<input type="submit" value="Submit" >
+ <input type="reset" value="Reset">
+</div>
+</form>
+</body>
+</html>
